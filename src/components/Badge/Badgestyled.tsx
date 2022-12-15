@@ -6,7 +6,7 @@ export const BadgeContainer = styled.div`
     justify-content: center;
     min-width: 12.5em;
     gap: .5rem;
-    padding: 0 .7rem;
+    padding: 0.2em 1.3rem;
     height: 2.5em;
     border: 1px solid var(--color-dark-green);
     border-radius: 20px;
