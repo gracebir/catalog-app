@@ -8,7 +8,7 @@ export const Globalstyled = createGlobalStyle`
     }
 
     :root{
-        --color-dark-grenn: #1E6140;
+        --color-dark-green: #1E6140;
         --color-green: #84C551;
         --color-red: #E74E13;
         --color-dark-red: #8D3200;
@@ -19,6 +19,5 @@ export const Globalstyled = createGlobalStyle`
 
     body{
         font-family: 'Montserrat', sans-serif;
-        background-color: var(--color-cream);
     }
 `
