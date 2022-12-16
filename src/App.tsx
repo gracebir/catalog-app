@@ -5,6 +5,8 @@ import Searchinput from "./components/Searchinput";
 import { FaBalanceScaleLeft } from 'react-icons/fa';
 import { SlBasket } from 'react-icons/sl';
 import Circlebasket from "./components/CircleBasket";
+import { products } from "./data";
+import ShoppingCard from "./components/Shoppingcard";
 
 const Main = styled.main`
   margin: 0 auto;
@@ -19,7 +21,13 @@ function App() {
       <Main>
         <Searchinput/>
         <Circle isShadow={false} Icon={FaBalanceScaleLeft} size="2.5rem"/>   
-        <Circlebasket isBasket={false} Icon={SlBasket} checkout={1}/>    
+        <Circlebasket isBasket={false} Icon={SlBasket} checkout={1}/>  
+        <ShoppingCard
+        productName={products[0].productName}
+        price={products[0].price}
+        detail={products[0].detail}
+        image={products[0].image}   
+        /> 
       </Main>
     </>
   );

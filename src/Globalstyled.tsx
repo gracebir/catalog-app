@@ -12,12 +12,13 @@ export const Globalstyled = createGlobalStyle`
         --color-green: #84C551;
         --color-red: #E74E13;
         --color-dark-red: #8D3200;
-        --color-black: #000000;
+        --color-black: #d6d4d4;
         --color-white: #FFFFFF;
         --color-cream: #F8F8F8;
     }
 
     body{
         font-family: 'Montserrat', sans-serif;
+        background-color: #aaa8a8;
     }
 `
