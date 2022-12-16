@@ -10,6 +10,7 @@ import ShoppingCard from "./components/Shoppingcard";
 import SideCard from "./components/SideCard";
 import SideCategory from "./components/SideCategory";
 import CheckBox from "./components/CheckBox";
+import Dropdown from "./components/Dropdown";
 
 const Main = styled.main`
   margin: 0 auto;
@@ -26,6 +27,7 @@ function App() {
         <Circle isShadow={false} Icon={FaBalanceScaleLeft} size="2.5rem"/>   
         <Circlebasket isBasket={false} Icon={SlBasket} checkout={1}/>  
         <CheckBox label="Нертус"/>
+        <Dropdown/>
         <ShoppingCard
         productName={products[0].productName}
         price={products[0].price}
