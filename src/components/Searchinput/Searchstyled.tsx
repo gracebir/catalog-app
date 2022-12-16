@@ -9,8 +9,7 @@ export const SearchinputContainer = styled.div`
     display: flex;
     gap: .875rem;
     align-items: center;
-    background-color: var(--color-white);
-    
+    background-color: var(--color-white); 
 `
 
 export const Input = styled.input`
