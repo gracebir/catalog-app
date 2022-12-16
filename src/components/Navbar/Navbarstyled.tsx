@@ -9,8 +9,8 @@ export const Navcontainer = styled.div`
     display: flex;
     gap: 2.5rem;
     left: 25.25em;
-    margin: 0 26.375em 0 25.25em;
-    width: 53%;
+    margin: 0 auto;
+    width: 60%;
 `
 
 export const NavbarLeft = styled.div`
@@ -36,7 +36,7 @@ export const DropdowSection = styled.div`
 
 export const NavItemSection = styled.div`
     display: flex;
-    gap: 1.5em;
+    gap: 2.6em;
 `
 
 export const Droptext = styled.p`
