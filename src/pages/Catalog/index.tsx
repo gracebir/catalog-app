@@ -1,7 +1,11 @@
 import React from 'react'
 import Dropdown from '../../components/Dropdown'
+import ShoppingCard from '../../components/Shoppingcard'
+import SideCard from '../../components/SideCard'
+import SideCategory from '../../components/SideCategory'
 import Titles from '../../components/Titles'
-import { CatalogContainer, CatalogProductContainer, DivCat, DivCatText } from './catalogStyled'
+import { products } from '../../data'
+import { CatalogContainer, CatalogProductCategorySection, CatalogProductContainer, CatalogProductSection, DivCat, DivCatText, ProductCardSection } from './catalogStyled'
 
 function Catalog() {
   return (
@@ -12,6 +16,22 @@ function Catalog() {
             <DivCatText>Показано 621 товарів</DivCatText>
             <Dropdown/>
         </DivCat>
+        <CatalogProductSection>
+            <CatalogProductCategorySection>
+                <SideCard/>
+                <SideCategory/>
+            </CatalogProductCategorySection>
+            <ProductCardSection>
+                {products.map((product, i)=>(
+                    <ShoppingCard
+                        productName={product.productName}
+                        price={product.price}
+                        detail={product.detail}
+                        image={product.image}
+                    />
+                ))}
+            </ProductCardSection>
+        </CatalogProductSection>
       </CatalogProductContainer>
     </CatalogContainer>
   )

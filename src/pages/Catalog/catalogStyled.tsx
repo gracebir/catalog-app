@@ -9,7 +9,9 @@ export const CatalogContainer = styled.div`
 `
 
 export const CatalogProductContainer = styled.div`
-    
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
 `
 
 export const DivCat = styled.div`
@@ -18,5 +20,24 @@ export const DivCat = styled.div`
 `
 
 export const DivCatText = styled.p`
-    
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+`
+
+export const CatalogProductSection = styled.div`
+    display: flex;
+    gap: 1.875em;
+`
+
+export const ProductCardSection = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875em;
+`
+
+export const CatalogProductCategorySection = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1.875em;
 `

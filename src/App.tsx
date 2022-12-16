@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import Catalog from "./pages/Catalog";
 
 const Main = styled.main`
   margin: 0 auto;
@@ -14,6 +15,7 @@ function App() {
       <Navbar/>
       <Main>
         <Header/>
+        <Catalog/>
       </Main>
     </>
   );
