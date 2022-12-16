@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export type titleProps = {
+    isSubtitle: boolean
+}
+
 export const TitleWrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -27,8 +31,8 @@ export const Span = styled.span`
     font-weight: 700;
 `
 
-export const DownTitle = styled.div`
-    display: flex;
+export const DownTitle = styled.div<titleProps>`
+    display: ${props => props.isSubtitle ? `flex`: `none`};
     align-items: center;
     gap: 1.125rem;
 `

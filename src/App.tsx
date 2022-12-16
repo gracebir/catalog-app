@@ -15,7 +15,7 @@ function App() {
       <Navbar/>
       <Main>
         <Header/>
-        <Titles/>
+        <Titles isSubtitle={true}/>
       </Main>
     </>
   );

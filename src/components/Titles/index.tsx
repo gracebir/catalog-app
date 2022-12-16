@@ -1,13 +1,13 @@
-import React from 'react'
-import { Dotitle, DownTitle, DownTitletext, Span, TitleWrapper, UpperTitle } from './titleStyled'
+import { Dotitle, DownTitle, DownTitletext, Span, titleProps, TitleWrapper, UpperTitle } from './titleStyled'
 import left from '../../assets/left.svg'
 import right from '../../assets/right.svg'
 
-function Titles() {
+
+function Titles({isSubtitle}: titleProps) {
   return (
     <TitleWrapper>
       <UpperTitle>Головна  <Dotitle/> Каталог  <Dotitle/>  <Span>Засоби захисту рослин</Span></UpperTitle>
-      <DownTitle>
+      <DownTitle isSubtitle={isSubtitle}>
         <img src={left} alt="" />
         <DownTitletext>Засоби захисту рослин</DownTitletext>
         <img src={right} alt="" />
