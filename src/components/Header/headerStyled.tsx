@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeaderContainer = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 1.53em;
 `
 
 export const TopHeader = styled.div`
