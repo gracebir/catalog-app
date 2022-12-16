@@ -1,11 +1,14 @@
 import React from 'react'
+import Circle from '../../components/Circle'
 import Dropdown from '../../components/Dropdown'
 import ShoppingCard from '../../components/Shoppingcard'
 import SideCard from '../../components/SideCard'
 import SideCategory from '../../components/SideCategory'
 import Titles from '../../components/Titles'
-import { products } from '../../data'
-import { CatalogContainer, CatalogProductCategorySection, CatalogProductContainer, CatalogProductSection, DivCat, DivCatText, ProductCardSection } from './catalogStyled'
+import { pagenumbers, products } from '../../data'
+import { CatalogContainer, CatalogProductCategorySection, CatalogProductContainer, CatalogProductSection, DivCat, DivCatText, PageCircle, PageCircletext, PageNavigation, PageNumbers, PageNumberSection, ProductCardSection } from './catalogStyled'
+import { BiChevronLeft} from 'react-icons/bi'
+import { BiChevronRight} from 'react-icons/bi'
 
 function Catalog() {
   return (
@@ -33,6 +36,19 @@ function Catalog() {
             </ProductCardSection>
         </CatalogProductSection>
       </CatalogProductContainer>
+      <PageNumberSection>
+      <PageNavigation>
+        <Circle Icon={BiChevronLeft} size={"30px"} isShadow={false}/>
+        <PageNumbers>
+            {pagenumbers.map((page, i)=>(
+                <PageCircle key={i}>
+                    <PageCircletext>{page}</PageCircletext>
+                </PageCircle>
+            ))}
+        </PageNumbers>
+        <Circle Icon={BiChevronRight} size={"30px"} isShadow={false}/>
+      </PageNavigation>
+      </PageNumberSection>
     </CatalogContainer>
   )
 }

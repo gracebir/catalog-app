@@ -231,3 +231,11 @@ export const side2 = [
     '5',
     '6'
 ]
+
+export const pagenumbers = [
+    '1',
+    '2',
+    '...',
+    '6',
+    '7'
+]

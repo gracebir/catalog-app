@@ -41,3 +41,41 @@ export const CatalogProductCategorySection = styled.div`
     flex-direction: column;
     gap: 1.875em;
 `
+
+export const PageNumberSection = styled.div`
+    width: 74%;
+    margin-left: 26%;
+    display: flex;
+    justify-content: space-around;
+`
+
+export const PageNavigation = styled.div`
+    display: flex;
+    gap: 1.25em;
+`
+
+export const PageNumbers = styled.div`
+    display: flex;
+    gap: 0.625em;
+`
+
+export const PageCircle = styled.div`
+    width: 1.875em;
+    height: 1.875em;
+    cursor: pointer;
+    border-radius: 90px;
+    border: 1px solid var(--color-red);
+    color: var(--color-red);
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        color: var(--color-white);
+        background-color: var(--color-red);
+    }
+`
+export const PageCircletext = styled.p`
+    font-size: 0.875rem;
+    font-weight: 400;
+`
