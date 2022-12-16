@@ -3,10 +3,10 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Catalog from "./pages/Catalog";
 
-const Main = styled.main`
+const Main = styled.div`
+  padding: 1rem 0;
   margin: 0 auto;
   width: 60%;
-  padding: 1rem 0;
 `
 
 function App() {
@@ -15,8 +15,8 @@ function App() {
       <Navbar/>
       <Main>
         <Header/>
-        <Catalog/>
       </Main>
+      <Catalog/>
     </>
   );
 }

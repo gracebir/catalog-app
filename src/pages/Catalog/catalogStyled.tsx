@@ -1,11 +1,17 @@
 import styled from "styled-components";
+import info from '../../assets/infoimage.svg'
+
+export const Divider = styled.div`
+    width: 100%;
+    margin-top: 2.8125em;
+`
 
 export const CatalogContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 2.8125em;
+    margin: 0 auto;
+    width: 58%;
     gap: 1.8em;
-    margin-right: 2.2rem;
 `
 
 export const CatalogProductContainer = styled.div`
@@ -78,4 +84,40 @@ export const PageCircle = styled.div`
 export const PageCircletext = styled.p`
     font-size: 0.875rem;
     font-weight: 400;
+`
+
+export const InfoSection = styled.div`
+    height: 31.25em;
+    margin-top: 7.5em;
+    width: 100%;
+    background-image: url(${info});
+    object-fit: cover;
+    background-repeat: no-repeat;
+    padding: 6.75em 0;
+`
+
+export const InfoTextSection = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 58%;
+    margin: 0 auto;
+`
+
+export const InfoTitleWrap = styled.div`
+    display: flex;
+    gap: .3em;
+    align-items: center;
+`
+
+export const InfoTitle = styled.h2`
+    font-size: 2.8125rem;
+    font-weight: 700;
+    color: var(--color-white);
+`
+export const InfoPara = styled.p`
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-white);
+    line-height: 1.25em;
 `
