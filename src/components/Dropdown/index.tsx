@@ -8,7 +8,7 @@ function Dropdown() {
       <DroptextContainer>
         <DropText>Сортувати за</DropText>
       </DroptextContainer>
-      <img src={line}/>
+      <img src={line} alt=""/>
       <Chevronicon/>
     </DropdownWrapper>
   )
