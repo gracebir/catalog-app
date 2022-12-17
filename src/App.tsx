@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Catalog from "./pages/Catalog";
 import { Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
 const Main = styled.div`
   padding: 1rem 0;
   margin: 0 auto;
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Catalog/>}/>
       </Routes>
+      <Footer/>
     </>
   );
 }
