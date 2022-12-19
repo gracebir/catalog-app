@@ -1,6 +1,7 @@
 import React from 'react'
 import { UpperTitle, Dotitle, Span } from '../../components/Titles/titleStyled'
 import TovalSmallCard from '../../components/TovarSmallCard'
+// eslint-disable-next-line
 import { BasketBadge, BasketBadgeText, HeaderRight, SmallCardSection, TopPrice, TopPriceLeft, TopPriceSection, TopPriceText, TovarContainer, ToverCircles, ToverHeader, ToverLeftSection, ToverMain, ToverPrice, ToverPriceButtom, ToverPriceFooter, ToverPriceSub, ToverRigtSection, ToverRigtSectionHeader, ToverSubMain } from './tovarstyled'
 import prod from '../../assets/prod1.svg'
 import right from '../../assets/right.svg'
@@ -10,6 +11,7 @@ import {BsCheck} from 'react-icons/bs'
 import {SlBasket} from 'react-icons/sl'
 import { AiOutlineHeart} from 'react-icons/ai'
 import Circlebasket from '../../components/CircleBasket'
+import TovarTab from '../../components/TovarTab'
 
 const Tovar = () => {
   return (
@@ -55,6 +57,7 @@ const Tovar = () => {
                 </ToverPriceFooter>
               </ToverRigtSection>
             </ToverSubMain>
+            <TovarTab/>
         </ToverMain>
       
     </TovarContainer>

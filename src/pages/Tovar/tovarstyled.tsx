@@ -7,6 +7,9 @@ export const TovarContainer = styled.div`
 export const ToverMain = styled.div`
     width: 58%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4.5em;
 `
 export const SmallCardSection = styled.div`
     display: flex;
