@@ -12,6 +12,7 @@ import {SlBasket} from 'react-icons/sl'
 import { AiOutlineHeart} from 'react-icons/ai'
 import Circlebasket from '../../components/CircleBasket'
 import TovarTab from '../../components/TovarTab'
+import TovarProduct from '../../components/TovarProduct'
 
 const Tovar = () => {
   return (
@@ -59,7 +60,7 @@ const Tovar = () => {
             </ToverSubMain>
             <TovarTab/>
         </ToverMain>
-      
+      <TovarProduct/>
     </TovarContainer>
   )
 }
